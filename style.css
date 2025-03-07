@@ -1,1 +1,38 @@
 /* Add styles here */
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Marko+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+h1.title{
+  font-family: 'Lilita One', cursive;
+  font-weight: 400;
+  font-size: 40px;
+  color:#E53170;
+}
+h2.secundary{
+  font-family: "Marko One", serif;
+  font-weight: 400;
+  font-size: 35px;
+  color:#d8cdcd;
+}
+h3.subtitle{
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+  font-size: 32px;
+  color:#000000;
+}
+
+button.primary{
+  background-color: #FF8906; /* Orange */
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: "Nunito", sans-serif;
+  font-weight: 500;	
+  font-size: 35px;
+  color: white;
+}
