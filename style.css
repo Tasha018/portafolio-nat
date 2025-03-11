@@ -24,15 +24,40 @@ h3.subtitle{
   color:#000000;
 }
 
-button.primary{
-  background-color: #FF8906; /* Orange */
+button.my_primary {
+  background-color: #FF8906;
   border: none;
+  border-radius: 16px;
+  color: white;
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-family: "Nunito", sans-serif;
-  font-weight: 500;	
-  font-size: 35px;
-  color: white;
+  font-weight: 200;
+  font-size: 30px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+button.my_secundary {
+  border: none;
+  border-radius: 16px;
+  color: #A7A9BE;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: "Nunito", sans-serif;
+  font-weight: 200;
+  font-size: 30px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+img.principal {
+  border-radius: 30px;
+}
+img.perfil {
+  border-radius: 10px;
 }
