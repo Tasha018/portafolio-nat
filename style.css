@@ -5,6 +5,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Marko+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
+/* Texto */
 h1.title{
   font-family: 'Lilita One', cursive;
   font-weight: 400;
@@ -24,6 +25,7 @@ h3.subtitle{
   color:#000000;
 }
 
+/* Botones */
 button.my_primary {
   background-color: #FF8906;
   border: none;
@@ -37,10 +39,11 @@ button.my_primary {
   font-weight: 200;
   font-size: 30px;
   margin: 4px 2px;
+  transition-duration: 0.4s;
   cursor: pointer;
 }
-
-button.my_secundary {
+button.my_primary:hover{
+  background-color: #333333;
   border: none;
   border-radius: 16px;
   color: #A7A9BE;
@@ -52,12 +55,64 @@ button.my_secundary {
   font-weight: 200;
   font-size: 30px;
   margin: 4px 2px;
+  transition-duration: 0.4s;
   cursor: pointer;
+  /* onclick=location.href= */
 }
 
+
+button.my_secundary {
+  background-color: #333333;
+  border: none;
+  border-radius: 16px;
+  color: #A7A9BE;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: "Nunito", sans-serif;
+  font-weight: 200;
+  font-size: 30px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  /* onclick=location.href= */
+}
+button.my_secundary:hover{
+  background-color: #ff8b0659;
+  border: none;
+  border-radius: 16px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: "Nunito", sans-serif;
+  font-weight: 200;
+  font-size: 30px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  /* onclick=location.href= */
+}
+
+/* Top-de-pagina */
+.rect_rojo {
+  background-color: #F25F4C;
+  padding: 0.5rem;
+}
+.rect_image {
+  background-image: url("./src/img/paisaje_1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 3rem;
+}
+
+/* Imagenes */
 img.principal {
   border-radius: 30px;
 }
 img.perfil {
-  border-radius: 10px;
+  border-radius: 100%;
 }
