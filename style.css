@@ -22,7 +22,7 @@ h3.subtitle{
   font-family: "Nunito", sans-serif;
   font-weight: 400;
   font-size: 32px;
-  color:#000000;
+  color:#ffffff;
 }
 
 /* Botones */
@@ -39,28 +39,7 @@ button.my_primary {
   font-weight: 200;
   font-size: 30px;
   margin: 4px 2px;
-  transition-duration: 0.4s;
-  cursor: pointer;
 }
-button.my_primary:hover{
-  background-color: #333333;
-  border: none;
-  border-radius: 16px;
-  color: #A7A9BE;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-family: "Nunito", sans-serif;
-  font-weight: 200;
-  font-size: 30px;
-  margin: 4px 2px;
-  transition-duration: 0.4s;
-  cursor: pointer;
-  /* onclick=location.href= */
-}
-
-
 button.my_secundary {
   background-color: #333333;
   border: none;
@@ -109,10 +88,11 @@ button.my_secundary:hover{
   padding: 3rem;
 }
 
-/* Imagenes */
+Imagenes
 img.principal {
   border-radius: 30px;
 }
 img.perfil {
   border-radius: 100%;
-}
+  border: 3px solid #F25F4C;
+} 
