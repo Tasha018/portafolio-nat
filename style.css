@@ -24,6 +24,13 @@ h3.subtitle{
   font-size: 32px;
   color:#ffffff;
 }
+h4.parrafo{
+  font-family: "Nunito", sans-serif;
+  font-weight: 300;
+  font-size: 25px;
+  color:#000000;
+}
+
 
 /* Botones */
 button.my_primary {
@@ -55,7 +62,6 @@ button.my_secundary {
   margin: 4px 2px;
   transition-duration: 0.4s;
   cursor: pointer;
-  /* onclick=location.href= */
 }
 button.my_secundary:hover{
   background-color: #ff8b0659;
@@ -72,27 +78,72 @@ button.my_secundary:hover{
   margin: 4px 2px;
   transition-duration: 0.4s;
   cursor: pointer;
-  /* onclick=location.href= */
 }
 
 /* Top-de-pagina */
-.rect_rojo {
+/* .rect_rojo {
   background-color: #F25F4C;
-  padding: 0.5rem;
-}
+  padding-top: 20px;
+  padding-right: 50px;
+  padding-bottom: 20px;
+  padding-left: 50px;
+} */
 .rect_image {
   background-image: url("./src/img/paisaje_1.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding: 3rem;
+  padding: 5rem;
+  border: 15px solid #F25F4C;
+  width: 100%;
+  z-index: -1;
 }
 
-Imagenes
+/* Div */
+.bottons {
+  justify-content: center;
+}
+.quien_soy {
+  background-color: #ffffff;
+  border-radius: 30px;
+  border: 20px solid #ffffff;
+  width: 850px;
+  height: 450px;
+  justify-content: end;
+}
+.escuela {
+  background-color: #ffffff;
+  border-radius: 30px;
+  border: 20px solid #ffffff;
+  width: 100%;
+  height: 200px;
+  justify-content: center;
+}
+.hobbies {
+  background-color: #ffffff;
+  border-radius: 30px;
+  border: 20px solid #ffffff;
+  width: 100%;
+  height: 350px;
+  justify-content: center;
+}
+
+/* Imagenes */
 img.principal {
   border-radius: 30px;
+  border: 20px solid #F25F4C;
 }
 img.perfil {
   border-radius: 100%;
-  border: 3px solid #F25F4C;
+  border: 15px solid #F25F4C;
+  top:50px;
+  left:100px;
+  position: absolute;
+  z-index: auto;
 } 
+img.photo {
+  border-radius: 150px;
+  border: 10px solid #ffffff;
+  width: 250px;
+  height: 250px;
+}
