@@ -6,29 +6,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
 /* Texto */
-h1.title{
+h1.title {
   font-family: 'Lilita One', cursive;
   font-weight: 400;
   font-size: 40px;
-  color:#E53170;
+  color: #E53170;
 }
-h2.secundary{
+
+h2.secundary {
   font-family: "Marko One", serif;
   font-weight: 400;
   font-size: 35px;
-  color:#d8cdcd;
+  color: #d8cdcd;
 }
-h3.subtitle{
+
+h3.subtitle {
   font-family: "Nunito", sans-serif;
   font-weight: 400;
   font-size: 32px;
-  color:#ffffff;
+  color: #ffffff;
 }
-h4.parrafo{
+
+h4.parrafo {
   font-family: "Nunito", sans-serif;
   font-weight: 300;
-  font-size: 25px;
-  color:#000000;
+  font-size: 20px;
+  color: #000000;
 }
 
 
@@ -45,37 +48,39 @@ button.my_primary {
   font-family: "Nunito", sans-serif;
   font-weight: 200;
   font-size: 30px;
-  margin: 4px 2px;
+  margin: 25px 40px;
 }
+
 button.my_secundary {
   background-color: #333333;
   border: none;
   border-radius: 16px;
   color: #A7A9BE;
-  padding: 15px 32px;
+  padding: 15px 50px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-family: "Nunito", sans-serif;
   font-weight: 200;
   font-size: 30px;
-  margin: 4px 2px;
+  margin: 25px 40px;
   transition-duration: 0.4s;
   cursor: pointer;
 }
-button.my_secundary:hover{
+
+button.my_secundary:hover {
   background-color: #ff8b0659;
   border: none;
   border-radius: 16px;
   color: white;
-  padding: 15px 32px;
+  padding: 15px 70px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-family: "Nunito", sans-serif;
   font-weight: 200;
   font-size: 30px;
-  margin: 4px 2px;
+  margin: 25px 40px;
   transition-duration: 0.4s;
   cursor: pointer;
 }
@@ -100,25 +105,25 @@ button.my_secundary:hover{
 }
 
 /* Div */
-.bottons {
-  justify-content: center;
-}
+
 .quien_soy {
   background-color: #ffffff;
   border-radius: 30px;
   border: 20px solid #ffffff;
-  width: 850px;
-  height: 450px;
-  justify-content: end;
+  width: 800px;
+  height: 380px;
+  margin-top: 80px;
 }
+
 .escuela {
   background-color: #ffffff;
   border-radius: 30px;
   border: 20px solid #ffffff;
   width: 100%;
   height: 200px;
-  justify-content: center;
+  justify-content: end;
 }
+
 .hobbies {
   background-color: #ffffff;
   border-radius: 30px;
@@ -133,14 +138,16 @@ img.principal {
   border-radius: 30px;
   border: 20px solid #F25F4C;
 }
+
 img.perfil {
   border-radius: 100%;
   border: 15px solid #F25F4C;
-  top:50px;
-  left:100px;
+  top: 50px;
+  left: 100px;
   position: absolute;
   z-index: auto;
-} 
+}
+
 img.photo {
   border-radius: 150px;
   border: 10px solid #ffffff;
