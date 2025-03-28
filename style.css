@@ -34,6 +34,15 @@ h4.parrafo {
   color: #000000;
 }
 
+h5.title_2 {
+  font-family: 'Lilita One', cursive;
+  font-weight: 400;
+  font-size: 28px;
+  color: #E53170;
+  margin: 10px;
+}
+
+
 
 /* Botones */
 button.my_primary {
@@ -41,14 +50,14 @@ button.my_primary {
   border: none;
   border-radius: 16px;
   color: white;
-  padding: 15px 32px;
+  padding: 15px 36px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-family: "Nunito", sans-serif;
-  font-weight: 200;
+  font-weight: 150;
   font-size: 30px;
-  margin: 25px 40px;
+  margin: 25px 5px;
 }
 
 button.my_secundary {
@@ -56,14 +65,14 @@ button.my_secundary {
   border: none;
   border-radius: 16px;
   color: #A7A9BE;
-  padding: 15px 50px;
+  padding: 15px 36px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-family: "Nunito", sans-serif;
   font-weight: 200;
   font-size: 30px;
-  margin: 25px 40px;
+  margin: 25px 5px;
   transition-duration: 0.4s;
   cursor: pointer;
 }
@@ -73,16 +82,50 @@ button.my_secundary:hover {
   border: none;
   border-radius: 16px;
   color: white;
-  padding: 15px 70px;
+  padding: 15px 36px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-family: "Nunito", sans-serif;
   font-weight: 200;
   font-size: 30px;
-  margin: 25px 40px;
+  margin: 25px 5px;
   transition-duration: 0.4s;
   cursor: pointer;
+}
+
+button.ver_mas {
+  background-color: #FF8906;
+  border: none;
+  border-radius: 16px;
+  color: white;
+  padding: 5px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: "Nunito", sans-serif;
+  font-weight: 200;
+  font-size: 18px;
+  margin-left: 25px;
+  margin-bottom: 10px;
+}
+
+button.ver_mas:hover {
+  background-color: #FF8906;
+  border: none;
+  border-radius: 16px;
+  color: white;
+  padding: 8px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: "Nunito", sans-serif;
+  font-weight: 200;
+  font-size: 22px;
+  margin-left: 25px;
+  margin-bottom: 10px;
+  transition-duration: 0.4s;
+  cursor: pointer
 }
 
 /* Top-de-pagina */
@@ -94,7 +137,6 @@ button.my_secundary:hover {
   padding-left: 50px;
 } */
 .rect_image {
-  background-image: url("./src/img/paisaje_1.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -102,6 +144,10 @@ button.my_secundary:hover {
   border: 15px solid #F25F4C;
   width: 100%;
   z-index: -1;
+}
+
+.progress-bar {
+  background-color: #E53170 !important;
 }
 
 /* Div */
@@ -112,7 +158,7 @@ button.my_secundary:hover {
   border: 20px solid #ffffff;
   width: 800px;
   height: 380px;
-  margin-top: 80px;
+  margin-top: 5px;
 }
 
 .escuela {
@@ -122,6 +168,7 @@ button.my_secundary:hover {
   width: 100%;
   height: 200px;
   justify-content: end;
+  margin-top: 20px;
 }
 
 .hobbies {
@@ -131,6 +178,15 @@ button.my_secundary:hover {
   width: 100%;
   height: 350px;
   justify-content: center;
+  margin-top: 20px
+}
+
+.experiencia {
+  background-color: #ffffff;
+  border-radius: 30px;
+  width: 345px;
+  height: 380px;
+  margin: 20px;
 }
 
 /* Imagenes */
@@ -151,6 +207,17 @@ img.perfil {
 img.photo {
   border-radius: 150px;
   border: 10px solid #ffffff;
+  width: 220px;
+  height: 220px;
+}
+
+img.photo_2 {
+  width: 345px;
+  height: 192px;
+}
+
+img.photo_3 {
+  border-radius: 150px;
   width: 250px;
   height: 250px;
 }
