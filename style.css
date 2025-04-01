@@ -128,14 +128,17 @@ button.ver_mas:hover {
   cursor: pointer
 }
 
-/* Top-de-pagina */
-/* .rect_rojo {
-  background-color: #F25F4C;
-  padding-top: 20px;
-  padding-right: 50px;
-  padding-bottom: 20px;
-  padding-left: 50px;
-} */
+.navbar-toggler {
+  display: none;
+}
+
+#barraNavegacion {
+  display: none;
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
+
+
 .rect_image {
   background-size: cover;
   background-position: center;
@@ -144,6 +147,7 @@ button.ver_mas:hover {
   border: 15px solid #F25F4C;
   width: 100%;
   z-index: -1;
+  display: block;
 }
 
 .progress-bar {
@@ -189,6 +193,10 @@ button.ver_mas:hover {
   margin: 20px;
 }
 
+.contacto_2 {
+  display: block;
+}
+
 /* Imagenes */
 img.principal {
   border-radius: 30px;
@@ -202,7 +210,12 @@ img.perfil {
   left: 100px;
   position: absolute;
   z-index: auto;
+  height: 270px;
+  width: 270px;
+  display: block;
 }
+
+img.perfil-2 {}
 
 img.photo {
   border-radius: 150px;
@@ -220,4 +233,12 @@ img.photo_3 {
   border-radius: 150px;
   width: 250px;
   height: 250px;
+}
+
+.name {
+  display: block;
+}
+
+.mobile-name {
+  display: none;
 }

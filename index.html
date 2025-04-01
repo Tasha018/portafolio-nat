@@ -16,6 +16,7 @@
     <meta property="og:url" content="/this-page.html" />
     <meta property="og:site_name" content="Your Site Name" /> -->
 	<link href="style.css" rel="stylesheet" />
+	<link href="Media-queris.css" rel="stylesheet" />
 	<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 
 	<!-- importar bootstrap  -->
@@ -33,53 +34,96 @@
 		<div class="rect_image" style="background-image: url('./src/img/paisaje_1.jpg');">
 		</div>
 		<div>
-			<img class="perfil" src="./src/img/Nat.p.png" height="270" width="270" />
+			<img class="perfil" src="./src/img/Nat.p.png" />
+			<!-- Botones web -->
 			<div class="bottons" style="margin-left: auto; text-align: end;">
 				<button type="button" class="my_primary" onclick="location.href='./index.html'">Acerca de mi</button>
 				<button type="button" class="my_secundary" onclick="location.href='./PAGE_2.html'">Experiencia</button>
 				<button type="button" class="my_secundary" onclick="location.href='./PAGE_3.html'">Habilidades</button>
 				<button type="button" class="my_secundary" onclick="location.href='./PAGE_4.html'">Varios</button>
 			</div>
+			<!-- Menú hamburguesa para móvil -->
+			<nav id="barraNavegacion" class="navbar navbar-expand-lg sticky-top"
+				style="background-color: #000; position: fixed; top: 0; left: 0; width: 100%; z-index: 1;">
+				<div class="container-fluid">
+					<img class="perfil-2" src="src/img/Nat.p.png" width="30">
+					<a class="navbar-brand" style="color: #fff;">Natalia Ramírez Zamorano Ocejo</a>
+					<button class="navbar-toggler" type="buttn" data-bs-toggle="collapse"
+						data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+						aria-expanded="false" aria-label="Toggle navigation">
+						<span>
+							<img src="src/img/menu.svg" width="30">
+						</span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarSupportedContent">
+						<ul class="navbar-nav me-auto mb-2 mb-lg-0" <li class="nav-item">
+							<a class="nav-link" href="#proyectos">Proyectos</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#serigrafia">Serigrafia</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#sublimacion">Sublimacion</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#digital">Digital</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#extras">Extras</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#contacto">Contacto</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
 		</div>
 		<div style="display: flex; align-items: center; gap: 10px;">
 			<div class="contacto">
-				<div style="padding-top: 2em; width:400px; text-align:center; margin-bottom: 30px;">
+				<div class="name" style="padding-top: 2em; width:400px; text-align:center; margin-bottom: 30px;">
 					<h2 class="secundary">Natalia Ramírez Zamorano Ocejo</h2>
 				</div>
-				<div style="display: flex; align-items: center; gap: 10px; margin: 10px;">
-					<svg xmlns="http://www.w3.org/2000/svg" width="60" height="62.6" viewBox="0 0 24 24" fill="none"
-						stroke="#F25F4C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-						class="lucide lucide-message-circle-icon lucide-message-circle">
-						<path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z" />
-					</svg>
-					<h3 class="subtitle">5611752282</h3>
+				<div class="mobile-name" style="padding-top: 2em; width:400px; text-align:center; margin-bottom: 30px;">
+					<h2 class="secundary">Portafolio de Natalia Ramírez Zamorano Ocejo</h2>
 				</div>
-				<div style="display: flex; align-items: center; gap: 10px; margin: 10px;">
-					<svg xmlns="http://www.w3.org/2000/svg" width="60" height="62.6" viewBox="0 0 24 24" fill="none"
-						stroke="#F25F4C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-						class="lucide lucide-mail-icon lucide-mail">
-						<rect width="20" height="16" x="2" y="4" rx="2" />
-						<path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
-					</svg>
-					<h3 class="subtitle">kiranats20@gmail.com</h3>
-				</div>
-				<div style="display: flex; align-items: center; gap: 10px; margin: 10px;">
-					<svg xmlns="http://www.w3.org/2000/svg" width="60" height="62.6" viewBox="0 0 24 24" fill="none"
-						stroke="#F25F4C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-						class="lucide lucide-instagram-icon lucide-instagram">
-						<rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
-						<path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
-						<line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
-					</svg>
-					<h3 class="subtitle">nataliarmzo1202</h3>
-				</div>
-				<div style="display: flex; align-items: center; gap: 10px; margin: 10px;">
-					<svg xmlns="http://www.w3.org/2000/svg" width="60" height="62.6" viewBox="0 0 24 24" fill="none"
-						stroke="#F25F4C" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-						stroke-linejoin="round" class="lucide lucide-facebook-icon lucide-facebook">
-						<path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
-					</svg>
-					<h3 class="subtitle">Natalia Ramírez Ocejo</h3>
+
+				<div class="contacto_2">
+					<div style="display: flex; align-items: center; gap: 10px; margin: 10px;">
+						<svg xmlns="http://www.w3.org/2000/svg" width="60" height="62.6" viewBox="0 0 24 24" fill="none"
+							stroke="#F25F4C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+							class="lucide lucide-message-circle-icon lucide-message-circle">
+							<path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z" />
+						</svg>
+						<h3 class="subtitle">5611752282</h3>
+					</div>
+					<div style="display: flex; align-items: center; gap: 10px; margin: 10px;">
+						<svg xmlns="http://www.w3.org/2000/svg" width="60" height="62.6" viewBox="0 0 24 24" fill="none"
+							stroke="#F25F4C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+							class="lucide lucide-mail-icon lucide-mail">
+							<rect width="20" height="16" x="2" y="4" rx="2" />
+							<path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+						</svg>
+						<h3 class="subtitle">kiranats20@gmail.com</h3>
+					</div>
+					<div style="display: flex; align-items: center; gap: 10px; margin: 10px;">
+						<svg xmlns="http://www.w3.org/2000/svg" width="60" height="62.6" viewBox="0 0 24 24" fill="none"
+							stroke="#F25F4C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+							class="lucide lucide-instagram-icon lucide-instagram">
+							<rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+							<path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+							<line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+						</svg>
+						<h3 class="subtitle">nataliarmzo1202</h3>
+					</div>
+					<div style="display: flex; align-items: center; gap: 10px; margin: 10px;">
+						<svg xmlns="http://www.w3.org/2000/svg" width="60" height="62.6" viewBox="0 0 24 24" fill="none"
+							stroke="#F25F4C" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+							stroke-linejoin="round" class="lucide lucide-facebook-icon lucide-facebook">
+							<path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+						</svg>
+						<h3 class="subtitle">Natalia Ramírez Ocejo</h3>
+					</div>
 				</div>
 			</div>
 			<div class="quien_soy"
