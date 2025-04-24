@@ -1,5 +1,7 @@
 @media only screen and (max-width: 768px) {
 
+
+
   /* Texto */
   h1.title {
     font-family: 'Lilita One', cursive;
@@ -91,6 +93,14 @@
     display: none;
   }
 
+  .menu_bottons {
+    font-family: "Nunito", sans-serif;
+    font-weight: 200;
+    font-size: 24;
+    color: #000000;
+
+  }
+
   .navbar-toggler {
     display: block;
   }
@@ -101,13 +111,18 @@
 
 
   .rect_image {
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    padding: 5rem;
-    border: 15px solid #F25F4C;
-    width: 100%;
-    z-index: -1;
+    display: none;
+  }
+
+  .titulo_portafolio {
+    display: block;
+  }
+
+  .imagen_portafolio {
+    display: block;
+  }
+
+  .contacto_2_solo_web {
     display: none;
   }
 
@@ -121,8 +136,8 @@
     background-color: #ffffff;
     border-radius: 30px;
     border: 20px solid #ffffff;
-    width: 800px;
-    height: 380px;
+    width: 100%;
+    height: 500px;
     margin-top: 5px;
   }
 
@@ -131,7 +146,7 @@
     border-radius: 30px;
     border: 20px solid #ffffff;
     width: 100%;
-    height: 200px;
+    height: 250px;
     justify-content: end;
     margin-top: 20px;
   }
