@@ -114,6 +114,19 @@
     display: none;
   }
 
+  .fondo_circular {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 5rem;
+    width: 100%;
+    height: 300px;
+    position: relative;
+    z-index: 1;
+    display: block;
+
+  }
+
   .titulo_portafolio {
     display: block;
   }
