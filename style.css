@@ -208,25 +208,16 @@ button.ver_mas:hover {
   display: block;
 }
 
+.titulo_portafolio {
+  display: none;
+}
+
 /* Imagenes */
 img.principal {
   border-radius: 30px;
   border: 20px solid #F25F4C;
 }
 
-img.perfil {
-  border-radius: 100%;
-  border: 15px solid #F25F4C;
-  top: 50px;
-  left: 100px;
-  position: absolute;
-  z-index: auto;
-  height: 270px;
-  width: 270px;
-  display: block;
-}
-
-img.perfil-2 {}
 
 img.photo {
   border-radius: 150px;
@@ -244,6 +235,24 @@ img.photo_3 {
   border-radius: 150px;
   width: 250px;
   height: 250px;
+}
+
+img.perfil {
+  border-radius: 100%;
+  border: 5px solid #F25F4C;
+  top: 50px;
+  left: 100px;
+  height: 65px;
+  width: 65px;
+  display: block;
+}
+
+.contacto_3_solo_mobil {
+  display: none;
+}
+
+.imagen_portafolio {
+  display: none;
 }
 
 .name {

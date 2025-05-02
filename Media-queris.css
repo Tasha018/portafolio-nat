@@ -227,9 +227,15 @@
   }
 
   img.photo_3 {
-    border-radius: 150px;
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
     width: 169px;
     height: 169px;
+  }
+
+  .contacto_3_solo_mobil {
+    display: block;
   }
 
   .name {
@@ -250,26 +256,37 @@
   }
 
   .hover-overlay {
-    position: z2;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
-    border-radius: 50%;
+    background-color: rgba(229, 49, 112, 0.7);
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
-    font-weight: bold;
-    text-align: center;
     opacity: 0;
-    pointer-events: none;
     transition: opacity 0.3s ease;
+    border-radius: 50%;
   }
 
-  .overlay-text {
-    padding: 10px;
+  .hover-text {
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .herramientas,
+  .aplicaciones {
+    position: relative;
+    display: inline-block;
+  }
+
+
+  .herramientas:hover .hover-overlay,
+  .aplicaciones:hover .hover-overlay {
+    opacity: 1;
   }
 
 }
