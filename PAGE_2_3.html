@@ -14,8 +14,9 @@
     <meta property="og:image" content="/some-image.png" />
     <meta property="og:url" content="/this-page.html" />
     <meta property="og:site_name" content="Your Site Name" /> -->
-    <link href="styles.css" rel="stylesheet" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link href="style.css" rel="stylesheet" />
+    <link href="Media-queris.css" rel="stylesheet" />
+    <link rel="icon" type="image/svg+xml" href="/src/img/web-img.png" />
 
     <!-- importar bootstrap  -->
     <link
@@ -33,30 +34,143 @@
   </head>
 
   <body>
-       <!-- Caja Bici -->
-       <h2>Prenda para ciclistas</h2>
-       <p>En este proyecto, nuestro objetivo fue diseñar una prenda que visibilizara a los ciclistas y, al mismo tiempo, los identificara como estudiantes de la UAM Cuajimalpa.
+    <!-- Caja Bici -->
+    <div class="p-3 mb-2 text-white" style="background-color: rgb(242, 95, 76)">
+      <div class="col-lg-12 col-sm-12">
+      <div class="titulos">
+        <div class="contenedor-titulo">
+          <div class="boton-regresar">
+            <a href="/PAGE_2.html">
+              <img
+                src="/src/img/icono-flecha.png"
+                alt="Regresar"
+                class="icono-flecha"
+              />
+            </a>
+          </div>
+          <div class="texto-titulo">Prenda para ciclistas</div>
+        </div>
+      </div>
+
+      <div class="parrafos">
+        <div class="contenido-parrafo">
+          En este proyecto, nuestro objetivo fue diseñar una prenda que visibilizara a los ciclistas y, al mismo tiempo, los identificara como estudiantes de la UAM Cuajimalpa.
         Tras evaluar diversas propuestas, optamos por el diseño de una sudadera personalizable, que combinara funcionalidad y representación institucional. Para su producción, utilizamos diferentes tipos de vinil textil y trabajamos con una plotter de corte para garantizar precisión en los detalles. Como resultado, desarrollamos tres modelos distintos, ofreciendo opciones variadas para los usuarios.
-       </p>
-         <h4>Galeria</h4>
-    <img class "photo"
-    alt="Imagenes Extintor"
-    src="/src/img/Extintor 1.jpeg"width="100" height="100"/>
-    <img class "photo"
-    alt="Imagenes Extintor"
-    src="/src/img/Extintor 2.jpeg"width="100" height="100"/>
-    <img class "photo"
-    alt="Imagenes Extintor"
-    src="/src/img/Extintor 3.jpeg"width="100" height="100"/>
-    <!-- Termina caja bici -->
-    
+        </div>
+      </div>
 
+      <div class="contenedor-galeria">
+        <h4 class="bi-text-left mb-10">Galería de Imágenes</h4>
+        <div class="gallery-nav">
+          <button
+            class="gallery-nav-btn gallery-nav-prev"
+            onclick="scrollGallery('left')"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-chevron-left"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"
+              />
+            </svg>
+          </button>
 
-    
+          <div class="gallery-scroll" id="galleryScroll">
+            <!-- Imagen 1 -->
+            <div class="scroll-item">
+              <div class="gallery-item" onclick="openModal(0)">
+                <img src="/src/img/P-img-1.png" alt="Imagen 1" />
+                <div class="gallery-overlay">
+                  <h5>Imagen 1</h5>
+                  <p class="mb-0">Bocetos en linea de la propuesta para prenda</p>
+                </div>
+              </div>
+            </div>
 
+            <!-- Imagen 2 -->
+            <div class="scroll-item">
+              <div class="gallery-item" onclick="openModal(1)">
+                <img src="/src/img/P-img-2.png" alt="Imagen 2" />
+                <div class="gallery-overlay">
+                  <h5>Imagen 2</h5>
+                  <p class="mb-0">Modelo en linea de la prenda</p>
+                </div>
+              </div>
+            </div>
 
+            <!-- Imagen 3 -->
+            <div class="scroll-item">
+              <div class="gallery-item" onclick="openModal(2)">
+                <img src="/src/img/P-img-3.png" alt="Imagen 3" />
+                <div class="gallery-overlay">
+                  <h5>Imagen 3</h5>
+                  <p class="mb-0">Mockup, sobre una prenda de prueba</p>
+                </div>
+              </div>
+            </div>
 
-	
+            <!-- Imagen 4 -->
+            <div class="scroll-item">
+              <div class="gallery-item" onclick="openModal(3)">
+                <img src="/src/img/P-img-4.png" alt="Imagen 4" />
+                <div class="gallery-overlay">
+                  <h5>Imagen 4</h5>
+                  <p class="mb-0">Fotos promocionales de la prenda</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Imagen 5 -->
+            <div class="scroll-item">
+              <div class="gallery-item" onclick="openModal(4)">
+                <img src="/src/img/P-img-5.png" alt="Imagen 5" />
+                <div class="gallery-overlay">
+                  <h5>Imagen 5</h5>
+                  <p class="mb-0">Trabajando con el vinil-textil</p>
+                </div>
+              </div>
+            </div>
+
+          <button
+            class="gallery-nav-btn gallery-nav-next"
+            onclick="scrollGallery('right')"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-chevron-right"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <script>
+        function scrollGallery(direction) {
+        const gallery = document.getElementById('galleryScroll');
+        const scrollAmount = 370;
+        
+        if (direction === 'left') {
+          gallery.scrollLeft -= scrollAmount;
+        } else {
+          gallery.scrollLeft += scrollAmount;
+        }
+      }
+      </script>
+      </div>
+    </div>
   </body>
 </html>
- 

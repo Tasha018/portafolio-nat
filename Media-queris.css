@@ -1,4 +1,4 @@
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 700px) {
 
 
 
@@ -29,14 +29,17 @@
     font-weight: 300;
     font-size: 20px;
     color: #000000;
+    margin-left: 5px;
+    margin-top: 5px;
+    text-align: center;
   }
 
   h5.title_2 {
     font-family: 'Lilita One', cursive;
     font-weight: 400;
-    font-size: 28px;
+    font-size: 20px;
     color: #E53170;
-    margin: 10px;
+    margin: 5px;
   }
 
 
@@ -56,33 +59,24 @@
     border: none;
     border-radius: 16px;
     color: white;
-    padding: 5px 20px;
+    padding: 5px 10px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-family: "Nunito", sans-serif;
-    font-weight: 200;
-    font-size: 18px;
-    margin-left: 25px;
-    margin-bottom: 10px;
+    font-weight: 300;
+    font-size: 20px;
   }
 
-  button.ver_mas:hover {
-    background-color: #FF8906;
-    border: none;
-    border-radius: 16px;
-    color: white;
-    padding: 8px 25px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-family: "Nunito", sans-serif;
-    font-weight: 200;
-    font-size: 22px;
-    margin-left: 25px;
-    margin-bottom: 10px;
-    transition-duration: 0.4s;
-    cursor: pointer
+  .boton-regresar {
+    height: 55%;
+    margin-right: 16px; 
+  }
+
+  .icono-flecha {
+    width: 60px; 
+    height: auto;
+    cursor: pointer; 
   }
 
   .my_primary {
@@ -129,10 +123,22 @@
 
   .titulo_portafolio {
     display: block;
+    font-size: 20px;
+  }
+
+  .titulos {
+    background-color: #ffffff;
+    width: 100%;
+    height: 100px;
+    color: #000000;
+    font-family: "Marko One", serif;
+    font-weight: 400;
+    font-size: 30px;
   }
 
   .imagen_portafolio {
     display: block;
+    width: 100%
   }
 
   .contacto_2_solo_web {
@@ -150,7 +156,7 @@
     border-radius: 30px;
     border: 20px solid #ffffff;
     width: 100%;
-    height: 500px;
+    height: 630px;
     margin-top: 5px;
   }
 
@@ -159,7 +165,7 @@
     border-radius: 30px;
     border: 20px solid #ffffff;
     width: 100%;
-    height: 250px;
+    height: 280px;
     justify-content: end;
     margin-top: 20px;
   }
@@ -177,13 +183,37 @@
   .experiencia {
     background-color: #ffffff;
     border-radius: 30px;
-    width: 250px;
-    height: 350px;
-    margin: 20px;
+    height: 330px;
+    margin: 0 auto 20px auto;
   }
 
   .contacto_2 {
     display: none;
+  }
+
+  .parrafos{
+    background-color: #ffffff;
+    height: 750px;
+    color: #000000;
+    font-family: "Nunito", sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  
+  .contenido-parrafo{
+    margin-top: 30px;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  
+  .links{
+    font-weight: 400;
+    margin-top: 22px;
+    margin-left: 15px;
+    margin-right: 15px;
   }
 
   /* Imagenes */
@@ -217,22 +247,24 @@
   img.photo {
     border-radius: 150px;
     border: 10px solid #ffffff;
-    width: 220px;
-    height: 220px;
+    width: 160px;
+    height: 160px;
   }
 
   img.photo_2 {
-    width: 250px;
-    height: 164px;
+    width: 100%;
+    height: 180px;
   }
 
   img.photo_3 {
     border-radius: 50%;
     aspect-ratio: 1/1;
     object-fit: cover;
-    width: 169px;
+    width: 100%;
     height: 169px;
   }
+
+
 
   .contacto_3_solo_mobil {
     display: block;
@@ -289,4 +321,11 @@
     opacity: 1;
   }
 
+  .scroll-item {
+    width: 250px;
+  }
+  
+  .gallery-item {
+    height: 250px;
+  }
 }

@@ -14,8 +14,9 @@
     <meta property="og:image" content="/some-image.png" />
     <meta property="og:url" content="/this-page.html" />
     <meta property="og:site_name" content="Your Site Name" /> -->
-    <link href="styles.css" rel="stylesheet" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link href="style.css" rel="stylesheet" />
+    <link href="Media-queris.css" rel="stylesheet" />
+    <link rel="icon" type="image/svg+xml" href="/src/img/web-img.png" />
 
     <!-- importar bootstrap  -->
     <link
@@ -33,22 +34,214 @@
   </head>
 
   <body>
-    <img class "photo"
-    alt="Imagen Lobo"
-    src="/src/img/Portada Lobo.jpeg"width="100" height="100"/>
-    <h4>Proyecto</h4>
-    <p>Primeros Proyectos
-      Primeros Trimestres
-      2022-2023</p>
-    <button class="btn--secundary">Ver más</button>
-    <!-- Fin Pagina 2 -->
+    <!-- Caja Macetas -->
+    <div class="p-3 mb-2 text-white" style="background-color: rgb(242, 95, 76)">
+      <div class="col-lg-12 col-sm-12">
+      <div class="titulos">
+        <div class="contenedor-titulo">
+          <div class="boton-regresar">
+            <a href="/PAGE_2.html">
+              <img
+                src="/src/img/icono-flecha.png"
+                alt="Regresar"
+                class="icono-flecha"
+              />
+            </a>
+          </div>
+          <div class="texto-titulo">Macetas y Empaques</div>
+        </div>
+      </div>
+
+      <div class="contenedor-galeria">
+        <h4 class="bi-text-left mb-10">Galería de Imágenes</h4>
+        <div class="gallery-nav">
+          <button
+            class="gallery-nav-btn gallery-nav-prev"
+            onclick="scrollGallery('left')"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-chevron-left"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"
+              />
+            </svg>
+          </button>
+
+          <div class="gallery-scroll" id="galleryScroll">
+            <!-- Imagen 1 -->
+            <div class="scroll-item">
+              <div class="gallery-item" onclick="openModal(0)">
+                <img src="/src/img/Z-img-1.png" alt="Imagen 1" />
+                <div class="gallery-overlay">
+                  <h5>Imagen 1</h5>
+                  <p class="mb-0">Dragón construido en Trazo Geometrico</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Imagen 2 -->
+            <div class="scroll-item">
+              <div class="gallery-item" onclick="openModal(1)">
+                <img src="/src/img/Z-img-2.png" alt="Imagen 2" />
+                <div class="gallery-overlay">
+                  <h5>Imagen 2</h5>
+                  <p class="mb-0">Dragón</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Imagen 3 -->
+            <div class="scroll-item">
+              <div class="gallery-item" onclick="openModal(2)">
+                <img src="/src/img/Z-img-3.png" alt="Imagen 3" />
+                <div class="gallery-overlay">
+                  <h5>Imagen 3</h5>
+                  <p class="mb-0">Lobo construido en Esterotomía terminado</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Imagen 4 -->
+            <div class="scroll-item">
+              <div class="gallery-item" onclick="openModal(3)">
+                <img src="/src/img/Z-img-4.png" alt="Imagen 4" />
+                <div class="gallery-overlay">
+                  <h5>Imagen 4</h5>
+                  <p class="mb-0">Proceso de construcción del Lobo/p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Imagen 5 -->
+            <div class="scroll-item">
+              <div class="gallery-item" onclick="openModal(4)">
+                <img src="/src/img/Z-img-5.png" alt="Imagen 5" />
+                <div class="gallery-overlay">
+                  <h5>Imagen 5</h5>
+                  <p class="mb-0">Gato dibujado con pixceles, usando principios de programación</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Imagen 6 -->
+            <div class="scroll-item">
+              <div class="gallery-item" onclick="openModal(0)">
+                <img src="/src/img/Z-img-6.png" alt="Imagen 6" />
+                <div class="gallery-overlay">
+                  <h5>Imagen 6</h5>
+                  <p class="mb-0">MoodBoard sobre la historia del Gallo-Vaca</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Imagen 7 -->
+            <div class="scroll-item">
+              <div class="gallery-item" onclick="openModal(1)">
+                <img src="/src/img/Z-img-7.png" alt="Imagen 7" />
+                <div class="gallery-overlay">
+                  <h5>Imagen 7</h5>
+                  <p class="mb-0">Dibujo hecho a mano del Gallo-Vaca</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Imagen 8 -->
+            <div class="scroll-item">
+              <div class="gallery-item" onclick="openModal(2)">
+                <img src="/src/img/Z-img-8.png" alt="Imagen 8" />
+                <div class="gallery-overlay">
+                  <h5>Imagen 8</h5>
+                  <p class="mb-0">Juego interactivo para niños</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Imagen 9 -->
+            <div class="scroll-item">
+              <div class="gallery-item" onclick="openModal(3)">
+                <img src="/src/img/Z-img-9.png" alt="Imagen 9" />
+                <div class="gallery-overlay">
+                  <h5>Imagen 9</h5>
+                  <p class="mb-0">Empaque del juego</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Imagen 10 -->
+            <div class="scroll-item">
+              <div class="gallery-item" onclick="openModal(4)">
+                <img src="/src/img/Z-img-10.png" alt="Imagen 10" />
+                <div class="gallery-overlay">
+                  <h5>Imagen 10</h5>
+                  <p class="mb-0">Lampara de pvc con historia de dinosaurios</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Imagen 11 -->
+            <div class="scroll-item">
+              <div class="gallery-item" onclick="openModal(3)">
+                <img src="/src/img/Z-img-11.png" alt="Imagen 11" />
+                <div class="gallery-overlay">
+                  <h5>Imagen 11</h5>
+                  <p class="mb-0">Maqueta</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Imagen 12 -->
+            <div class="scroll-item">
+              <div class="gallery-item" onclick="openModal(4)">
+                <img src="/src/img/Z-img-12.png" alt="Imagen 12" />
+                <div class="gallery-overlay">
+                  <h5>Imagen 12</h5>
+                  <p class="mb-0">Dibujos.</p>
+                </div>
+              </div>
+            </div>
 
 
-    
+            <button
+            class="gallery-nav-btn gallery-nav-next"
+            onclick="scrollGallery('right')"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-chevron-right"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
 
-
-
-	
+      <script>
+        function scrollGallery(direction) {
+        const gallery = document.getElementById('galleryScroll');
+        const scrollAmount = 370;
+        
+        if (direction === 'left') {
+          gallery.scrollLeft -= scrollAmount;
+        } else {
+          gallery.scrollLeft += scrollAmount;
+        }
+      }
+      </script>
+      </div>
+    </div>
   </body>
 </html>
- 

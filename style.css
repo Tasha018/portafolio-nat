@@ -23,7 +23,7 @@ h2.secundary {
 h3.subtitle {
   font-family: "Nunito", sans-serif;
   font-weight: 400;
-  font-size: 32px;
+  font-size: 28px;
   color: #ffffff;
 }
 
@@ -128,6 +128,17 @@ button.ver_mas:hover {
   cursor: pointer
 }
 
+.boton-regresar {
+  height: 90%;
+  margin-right: 16px; 
+}
+
+.icono-flecha {
+  width: 70px; 
+  height: auto;
+  cursor: pointer; 
+}
+
 .navbar-toggler {
   display: none;
 }
@@ -164,7 +175,7 @@ button.ver_mas:hover {
   background-color: #ffffff;
   border-radius: 30px;
   border: 20px solid #ffffff;
-  width: 800px;
+  width: 100%px;
   height: 380px;
   margin-top: 5px;
 }
@@ -212,6 +223,57 @@ button.ver_mas:hover {
   display: none;
 }
 
+.titulos {
+  background-color: #ffffff;
+  width: 100%;
+  height: 100px;
+  color: #000000;
+  font-family: "Marko One", serif;
+  font-weight: 400;
+  font-size: 50px;
+}
+
+.contenedor-titulo {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 0 20px;
+}
+
+
+
+
+.texto-titulo {
+  flex-grow: 1;
+  text-align: center; 
+}
+
+.parrafos{
+  background-color: #ffffff;
+  /* width: 90%; */
+  height: 430px;
+  color: #000000;
+  font-family: "Nunito", sans-serif;
+  font-weight: 300;
+  font-size: 25px;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.contenido-parrafo{
+  margin-top: 20px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.links{
+  font-weight: 400;
+  margin-top: 22px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
 /* Imagenes */
 img.principal {
   border-radius: 30px;
@@ -221,9 +283,9 @@ img.principal {
 
 img.photo {
   border-radius: 150px;
-  border: 10px solid #ffffff;
-  width: 220px;
-  height: 220px;
+  border: 8px solid #ffffff;
+  width: 175px;
+  height: 175px;
 }
 
 img.photo_2 {
@@ -265,4 +327,122 @@ img.perfil {
 
 .habilidades_descripcion {
   display: block;
+}
+
+.contenedor-galeria {
+  padding: 40px 0;
+}
+
+.gallery-item {
+  position: relative;
+  margin-bottom: 30px;
+  overflow: hidden;
+  border-radius: 5px;
+  cursor: pointer;
+  height: 350px;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.05);
+}
+
+.gallery-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 10px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.gallery-item:hover .gallery-overlay {
+  opacity: 1;
+}
+
+.modal-content {
+  background-color: transparent;
+  border: none;
+}
+
+.modal-body {
+  padding: 0;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: auto;
+  max-height: 80vh;
+  object-fit: contain;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 10%;
+  border-radius: 0 5px 5px 0;
+}
+
+.carousel-control-next {
+  border-radius: 5px 0 0 5px;
+}
+
+
+.gallery-nav {
+  position: relative;
+  padding: 0 30px;
+  margin-bottom: 30px;
+}
+
+.gallery-nav-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  cursor: pointer;
+}
+
+.gallery-nav-prev {
+  left: 0;
+}
+
+.gallery-nav-next {
+  right: 0;
+}
+
+.gallery-scroll {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none; 
+  -ms-overflow-style: none; 
+  padding-bottom: 10px;
+}
+
+.gallery-scroll::-webkit-scrollbar {
+  display: none; 
+}
+
+.scroll-item {
+  flex: 0 0 auto;
+  width: 350px;
+  padding: 0 10px;
 }

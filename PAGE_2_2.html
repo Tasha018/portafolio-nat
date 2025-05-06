@@ -14,8 +14,9 @@
     <meta property="og:image" content="/some-image.png" />
     <meta property="og:url" content="/this-page.html" />
     <meta property="og:site_name" content="Your Site Name" /> -->
-    <link href="styles.css" rel="stylesheet" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link href="style.css" rel="stylesheet" />
+    <link href="Media-queris.css" rel="stylesheet" />
+    <link rel="icon" type="image/svg+xml" href="/src/img/web-img.png" />
 
     <!-- importar bootstrap  -->
     <link
@@ -33,34 +34,144 @@
   </head>
 
   <body>
-  
-    
-       
     <!-- Caja Extintor -->
-    <h2>Señaletica para Extintor</h2>
-    <p>Este proyecto consistió en el diseño y fabricación de una señalética luminosa para la UAM Cuajimalpa, utilizando como herramienta principal la cortadora láser.
+    <div class="p-3 mb-2 text-white" style="background-color: rgb(242, 95, 76)">
+      <div class="col-lg-12 col-sm-12">
+      <div class="titulos">
+        <div class="contenedor-titulo">
+          <div class="boton-regresar">
+            <a href="/PAGE_2.html">
+              <img
+                src="/src/img/icono-flecha.png"
+                alt="Regresar"
+                class="icono-flecha"
+              />
+            </a>
+          </div>
+          <div class="texto-titulo">Señalética para Extintor</div>
+        </div>
+      </div>
+
+      <div class="parrafos">
+        <div class="contenido-parrafo">
+          Este proyecto consistió en el diseño y fabricación de una señalética luminosa para la UAM Cuajimalpa, utilizando como herramienta principal la cortadora láser.
       Tras una investigación sobre la problemática, mi equipo y yo decidimos crear una estereotomía de un extintor, fabricada en acrílico transparente. Para su montaje, diseñamos una base de MDF, pensada para incrustarse en la pared. Además, esta base también funcionaba como soporte para la fuente de luz, la cual iluminaba la estereotomía, mejorando su visibilidad.
       Para simplificar la instalación y evitar la necesidad de un sistema de conexiones eléctricas, la luz fue diseñada para funcionar con pilas, garantizando así mayor flexibilidad y facilidad de uso.
-    </p>
-      <h4>Galeria</h4>
- <img class "photo"
- alt="Imagenes Extintor"
- src="/src/img/Extintor 1.jpeg"width="100" height="100"/>
- <img class "photo"
- alt="Imagenes Extintor"
- src="/src/img/Extintor 2.jpeg"width="100" height="100"/>
- <img class "photo"
- alt="Imagenes Extintor"
- src="/src/img/Extintor 3.jpeg"width="100" height="100"/>
- <!-- Termina caja extintor -->
-    
+        </div>
+      </div>
 
+      <div class="contenedor-galeria">
+        <h4 class="bi-text-left mb-10">Galería de Imágenes</h4>
+        <div class="gallery-nav">
+          <button
+            class="gallery-nav-btn gallery-nav-prev"
+            onclick="scrollGallery('left')"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-chevron-left"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"
+              />
+            </svg>
+          </button>
 
-    
+          <div class="gallery-scroll" id="galleryScroll">
+            <!-- Imagen 1 -->
+            <div class="scroll-item">
+              <div class="gallery-item" onclick="openModal(0)">
+                <img src="/src/img/E-img-1.png" alt="Imagen 1" />
+                <div class="gallery-overlay">
+                  <h5>Imagen 1</h5>
+                  <p class="mb-0">Señalética iluminada en rojo, como se vería en caso de emergencia</p>
+                </div>
+              </div>
+            </div>
 
+            <!-- Imagen 2 -->
+            <div class="scroll-item">
+              <div class="gallery-item" onclick="openModal(1)">
+                <img src="/src/img/E-img-2.png" alt="Imagen 2" />
+                <div class="gallery-overlay">
+                  <h5>Imagen 2</h5>
+                  <p class="mb-0">Esterotomía terminada en acrílico</p>
+                </div>
+              </div>
+            </div>
 
+            <!-- Imagen 3 -->
+            <div class="scroll-item">
+              <div class="gallery-item" onclick="openModal(2)">
+                <img src="/src/img/E-img-3.png" alt="Imagen 3" />
+                <div class="gallery-overlay">
+                  <h5>Imagen 3</h5>
+                  <p class="mb-0">Modelo de la esterotomía cortado en MDF</p>
+                </div>
+              </div>
+            </div>
 
-	
+            <!-- Imagen 4 -->
+            <div class="scroll-item">
+              <div class="gallery-item" onclick="openModal(3)">
+                <img src="/src/img/E-img-4.png" alt="Imagen 4" />
+                <div class="gallery-overlay">
+                  <h5>Imagen 4</h5>
+                  <p class="mb-0">Haciendo las conexiones eléctricas</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Imagen 5 -->
+            <div class="scroll-item">
+              <div class="gallery-item" onclick="openModal(4)">
+                <img src="/src/img/E-img-5.png" alt="Imagen 5" />
+                <div class="gallery-overlay">
+                  <h5>Imagen 5</h5>
+                  <p class="mb-0">Señaletica iluminada en blanco como se vería normalmente.</p>
+                </div>
+              </div>
+            </div>
+
+          <button
+            class="gallery-nav-btn gallery-nav-next"
+            onclick="scrollGallery('right')"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-chevron-right"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <script>
+        function scrollGallery(direction) {
+        const gallery = document.getElementById('galleryScroll');
+        const scrollAmount = 370;
+        
+        if (direction === 'left') {
+          gallery.scrollLeft -= scrollAmount;
+        } else {
+          gallery.scrollLeft += scrollAmount;
+        }
+      }
+      </script>
+      </div>
+    </div>
   </body>
 </html>
- 
